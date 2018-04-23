@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>  
+<title>登录</title>
+<script>
+function login(id)
+{
+    var myPwd = document.getElementById('password');
+	var myName = document.getElementById('uname');
+    if (myPwd.value==123){
+	   alert("登录成功！");
+	}else{
+	  alert("密码有误！");
+	  myPwd.value="";
+	  myName.value="";
+	}
+}
+</script>
+ </head>
+ <body>
+用户名:<input type="text" id="uname"name="username"/>
+密码框:</td><td><input type="password" id ="password" name="pwd"/>
+<input onclick=login() type="button" value="登录"/>
+</body>
+</html>
